@@ -1,0 +1,25 @@
+{
+  "name": "xml-utils",
+  "version": "1.0.0",
+  "description": "Node.js utilities for working with XML",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "xml2js": "^0.4.23",
+    "fast-xml-parser": "^4.2.4",
+    "xpath": "^0.0.32",
+    "xmlbuilder2": "^3.0.2"
+  },
+  "keywords": [
+    "xml",
+    "parser",
+    "builder",
+    "xpath",
+    "dom",
+    "validator"
+  ],
+  "author": "bacon",
+  "license": "MIT"
+}

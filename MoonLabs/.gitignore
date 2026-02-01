@@ -8,5 +8,3 @@ src/DevPackages/
 sourcemap.json
 site/
 package-lock.json
-moonlabs.xml
-index.js
