@@ -1,0 +1,7 @@
+{
+  "name": "MoonLabs",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": { "$className": "ReplicatedStorage", "MoonLabs": {"$path": "src"} }
+  }
+}
