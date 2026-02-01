@@ -1,0 +1,30 @@
+/* Make the toggle look like a floating circular button */
+.md-header__button.md-icon {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  padding: 0.45rem;
+  margin-right: 0.4rem;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.md-header__button.md-icon:hover {
+  background: rgba(0, 0, 0, 0.15);
+  transform: scale(1.15);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+/* Dark mode styling */
+[data-md-color-scheme="slate"] .md-header__button.md-icon {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-header__button.md-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 14px rgba(255,255,255,0.15);
+}
+
+/* Smooth icon fade when switching themes */
+.md-header__button.md-icon svg {
+  transition: opacity 0.25s ease;
+}

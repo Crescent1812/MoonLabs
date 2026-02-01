@@ -1,0 +1,28 @@
+/* Smooth fade + slide for tab content */
+.md-typeset .tabbed-content {
+  animation: fadeSlide 0.35s ease;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Modern tab styling */
+.md-typeset .tabbed-labels > label {
+  font-family: "Architects Daughter", sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 8px 8px 0 0;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  background: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+/* Active tab highlight */
+.md-typeset .tabbed-labels > label.md-tab--active {
+  background: var(--md-accent-fg-color);
+  color: white;
+}

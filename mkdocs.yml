@@ -1,0 +1,61 @@
+site_name: MoonLabs Roblox Programming SDK
+site_author: MoonLabs
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+    - content.tabs.sticky
+    - content.tabs.annotate
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: false
+    code: JetBrains Mono
+
+extra_css:
+  - stylesheets/fonts.css
+  - stylesheets/animations.css
+  - stylesheets/tabs.css
+  - stylesheets/CardControl.css
+  - stylesheets/theme-toggle.css
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+
+nav:
+  - Home: index.md
+  - Guide:
+      - Getting Started: getting-started.md
+      - Usage: usage.md
+  - Reference: reference.md

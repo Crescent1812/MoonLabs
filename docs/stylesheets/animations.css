@@ -1,0 +1,28 @@
+/* Fade-in animation for page content */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.md-content {
+  animation: fadeIn 0.45s ease-out;
+}
+
+/* Smooth hover animation for navigation links */
+.md-nav__link {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.md-nav__link:hover {
+  transform: translateX(4px);
+  color: var(--md-accent-fg-color);
+}
+
+/* Subtle hover lift for admonitions */
+.admonition {
+  transition: box-shadow 0.3s ease;
+}
+
+.admonition:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
